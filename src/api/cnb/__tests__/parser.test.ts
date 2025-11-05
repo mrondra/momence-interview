@@ -1,5 +1,4 @@
 import { parseCnbDailyText } from '../parser';
-import type { CnbDailyResponse } from '../types';
 
 describe('parseCnbDailyText', () => {
   it('should parse valid CNB daily text format', () => {

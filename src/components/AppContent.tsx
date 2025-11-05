@@ -1,14 +1,12 @@
-import { StyleSheet, View } from 'react-native';
-import { useCnbRates } from '../api/cnb';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { CnbRatesList } from './CnbRatesList';
 
 export function AppContent() {
-  // Trigger data load on app start; UI will be added later
-  useCnbRates();
-
   return (
-    <View style={styles.container}>
-      {/* Intentionally no UI for now */}
-    </View>
+    <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
+      <CnbRatesList />
+    </SafeAreaView>
   );
 }
 

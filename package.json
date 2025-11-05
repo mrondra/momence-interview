@@ -11,15 +11,19 @@
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.82.1",
+    "@rneui/base": "^4.0.0-rc.8",
+    "@rneui/themed": "^4.0.0-rc.8",
     "@tanstack/react-query": "^5.90.6",
     "lodash": "^4.17.21",
     "react": "19.1.1",
     "react-native": "0.82.1",
     "react-native-safe-area-context": "^5.5.2",
+    "react-native-vector-icons": "^10.3.0",
     "zod": "^4.1.12"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@react-native-community/cli": "20.0.0",
