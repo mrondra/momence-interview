@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { CnbRatesList } from './CnbRatesList';
+import { RootNavigator } from '../navigation/RootNavigator';
 
 export function AppContent() {
   return (
     <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
-      <CnbRatesList />
+      <RootNavigator />
     </SafeAreaView>
   );
 }
