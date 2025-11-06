@@ -1,11 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { CnbRatesList } from '../components/CnbRatesList';
-import { TabRoute } from './tabRoutes';
+import { CnbRatesScreen } from '../screens/CnbRates/CnbRatesScreen';
+import { CurrencyConverterScreen } from '../screens/CurrencyConverter/CurrencyConverterScreen';
+import { TabRoute } from './routes/routeNames';
 import { createTabBarIcon } from './createTabBarIcon';
-import { CurrencyConverter } from '../components/CurrencyConverter';
+import type { TabParamList } from './types/navigation';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<TabParamList>();
 
 export function RootNavigator() {
   return (
@@ -20,12 +21,12 @@ export function RootNavigator() {
       >
         <Tab.Screen
           name={TabRoute.Rates}
-          component={CnbRatesList}
+          component={CnbRatesScreen}
           options={{ tabBarLabel: 'Kurzy' }}
         />
         <Tab.Screen
           name={TabRoute.Conversion}
-          component={CurrencyConverter}
+          component={CurrencyConverterScreen}
           options={{ tabBarLabel: 'Konverze' }}
         />
       </Tab.Navigator>

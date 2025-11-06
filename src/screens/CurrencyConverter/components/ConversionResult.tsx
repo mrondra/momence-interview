@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Text } from '@rneui/themed';
-import type { CnbRate } from '../api/cnb';
+import type { CnbRate } from '../../../api/cnb';
 import { StyleSheet } from 'react-native';
-import { getPerUnitRate } from '../utils/getPerUnitRate';
+import { getPerUnitRate } from '../../../utils/getPerUnitRate.ts';
 
 export type ConversionResultProps = {
   selectedRate: CnbRate;

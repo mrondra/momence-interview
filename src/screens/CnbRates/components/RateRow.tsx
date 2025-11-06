@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { StyleSheet } from 'react-native';
 import { ListItem, Text } from '@rneui/themed';
-import type { CnbRate } from '../api/cnb';
+import type { CnbRate } from '../../../api/cnb';
 
 export type RateRowProps = { rate: CnbRate };
 

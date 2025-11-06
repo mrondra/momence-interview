@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Button, Text } from '@rneui/themed';
-import type { CnbRate } from '../api/cnb';
-import { convertCzkToForeign } from '../utils/convertCzkToForeign';
-import { getNumber } from '../utils/getNumber';
-import { AmountInput } from './AmountInput';
-import { CurrencySelect } from './CurrencySelect';
-import { ConversionResult } from './ConversionResult';
+import type { CnbRate } from '../../../api/cnb';
+import { convertCzkToForeign } from '../../../utils/convertCzkToForeign';
+import { getNumber } from '../../../utils/getNumber';
+import { AmountInput } from '../../../components/AmountInput';
+import { CurrencySelect } from './CurrencySelect.tsx';
+import { ConversionResult } from './ConversionResult.tsx';
 
 export type CurrencyConverterFormProps = {
   rates: CnbRate[];
