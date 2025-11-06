@@ -1,15 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text } from 'react-native';
 import { CnbRatesList } from '../components/CnbRatesList';
 import { TabRoute } from './tabRoutes';
 import { createTabBarIcon } from './createTabBarIcon';
+import { CurrencyConverter } from '../components/CurrencyConverter';
 
 const Tab = createBottomTabNavigator();
-
-function SecondScreen() {
-  return <Text style={styles.text}>Druhá záložka</Text>;
-}
 
 export function RootNavigator() {
   return (
@@ -29,14 +25,10 @@ export function RootNavigator() {
         />
         <Tab.Screen
           name={TabRoute.Conversion}
-          component={SecondScreen}
+          component={CurrencyConverter}
           options={{ tabBarLabel: 'Konverze' }}
         />
       </Tab.Navigator>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  text: { fontSize: 18, textAlign: 'center', marginTop: 32 },
-});

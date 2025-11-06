@@ -1,4 +1,4 @@
-import { parseCnbDailyText } from '../parser';
+import { parseCnbDailyText } from './parser.ts';
 
 describe('parseCnbDailyText', () => {
   it('should parse valid CNB daily text format', () => {
