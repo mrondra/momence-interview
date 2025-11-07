@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Text } from '@rneui/themed';
 import type { CnbRate } from '../../../api/cnb';
 import { StyleSheet } from 'react-native';
@@ -38,7 +37,7 @@ export const ConversionResult = ({
 };
 
 const styles = StyleSheet.create({
-  resultCard: { marginTop: 24, width: '100%' },
+  resultCard: { marginTop: 24 },
   resultText: { fontSize: 18, fontWeight: '600' },
   hint: { marginTop: 8, color: '#666' },
 });

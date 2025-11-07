@@ -13,13 +13,9 @@ export const CurrencySelect = ({
   selected,
   onSelect,
 }: CurrencySelectProps) => {
-  const handleValueChange = (val: string) => {
-    onSelect(val);
-  };
-
   return (
     <View style={styles.wrapper}>
-      <Picker selectedValue={selected} onValueChange={handleValueChange}>
+      <Picker selectedValue={selected} onValueChange={onSelect}>
         {rates.map(r => {
           const label = `${r.code} (${r.currency})`;
           return <Picker.Item key={r.code} label={label} value={r.code} />;

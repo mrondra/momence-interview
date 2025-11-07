@@ -13,7 +13,7 @@ const renderContent = (loaded: CnbDailyResponse) => {
   const asOfLabel = loaded.asOf ? `Platné k ${loaded.asOf}` : '';
   return (
     <View style={styles.container}>
-      {loaded.asOf ? (
+      {!!loaded.asOf ? (
         <View style={styles.header}>
           <Text style={styles.asOfText}>{asOfLabel}</Text>
         </View>
